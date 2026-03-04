@@ -15,8 +15,8 @@ public abstract class AMasina {
         this.proprietar = proprietar;
     }
 
-    public String getNumarInmatriculare() { return numarInmatriculare; }
-    public String getProprietar() { return proprietar; }
+  //  public String getNumarInmatriculare() { return numarInmatriculare; }
+  //  public String getProprietar() { return proprietar; }
 
     public abstract String getTip();
 
