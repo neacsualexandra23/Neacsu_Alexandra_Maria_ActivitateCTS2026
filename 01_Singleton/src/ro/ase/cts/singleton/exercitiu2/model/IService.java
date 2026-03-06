@@ -1,4 +1,4 @@
-package ro.ase.cts.singleton.exercitiu2;
+package ro.ase.cts.singleton.exercitiu2.model;
 
 public interface IService {
     void primesteMasina(AMasina masina);

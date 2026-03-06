@@ -1,0 +1,21 @@
+package ro.ase.cts.singleton.exercitiu1_.model;
+
+
+public class RegistruInternari implements IRegistruInternari {
+
+    private static RegistruInternari instance;
+
+    private RegistruInternari() {}
+
+    public static RegistruInternari getInstance() {
+        if(instance == null) {
+            instance = new RegistruInternari();
+        }
+        return instance;
+    }
+
+    @Override
+    public void afiseazaMesaj() {
+        System.out.println("Registrul de internari este activ.");
+    }
+}

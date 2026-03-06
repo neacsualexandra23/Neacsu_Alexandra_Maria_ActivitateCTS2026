@@ -1,4 +1,4 @@
-package ro.ase.cts.singleton.exercitiu2;
+package ro.ase.cts.singleton.exercitiu2.model;
 
 import java.util.ArrayDeque;
 import java.util.Queue;

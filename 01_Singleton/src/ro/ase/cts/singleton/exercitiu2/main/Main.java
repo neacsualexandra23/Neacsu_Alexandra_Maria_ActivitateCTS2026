@@ -1,4 +1,6 @@
-package ro.ase.cts.singleton.exercitiu2;
+package ro.ase.cts.singleton.exercitiu2.main;
+
+import ro.ase.cts.singleton.exercitiu2.model.*;
 
 public class Main {
     public static void main(String[] args) {
