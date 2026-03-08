@@ -1,61 +1,14 @@
 package ro.ase.cts.singleton.exercitiul3_.model;
 
+import ro.ase.cts.singleton.exercitiul3_.model.AMasina;
+import ro.ase.cts.singleton.exercitiul3_.model.IService;
+
 public class ServiceAuto implements IService {
 
-    private static ServiceAuto instance;  // Singleton (lazy)
-    private AMasina masinaCurent
+    private static ServiceAuto instance;   // Singleton (lazy)
+    private AMasina masinaCurenta;         // în service poate fi doar una
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        a;        // doar una în service
-
-    private ServiceAuto() {}
+    private ServiceAuto() { }              // constructor privat
 
     public static ServiceAuto getInstance() {
         if (instance == null) {
@@ -68,28 +21,20 @@ public class ServiceAuto implements IService {
     public void primesteMasina(AMasina masina) {
         if (masinaCurenta == null) {
             masinaCurenta = masina;
-            System.out.print("Acceptata in service: ");
+            System.out.println("Masina ACCEPTATA in service: ");
             masinaCurenta.descriere();
         } else {
-            System.out.print("Service ocupat, respinsa: ");
+            System.out.println("Service ocupat. Masina NU poate fi acceptata acum:");
             masina.descriere();
         }
     }
 
- /*   @Override
-    public void incepeReparatia() {
-        if (masinaCurenta != null) {
-            System.out.print("Reparatie inceputa pentru: ");
-            masinaCurenta.descriere();
-        } else {
-            System.out.println("Nu exista masina in service.");
-        }
-    }
-*/
+
+
     @Override
     public void finalizeazaReparatia() {
         if (masinaCurenta != null) {
-            System.out.print("Reparatie finalizata pentru: ");
+            System.out.println("Reparatie FINALIZATA pentru:");
             masinaCurenta.descriere();
             masinaCurenta = null;
         } else {

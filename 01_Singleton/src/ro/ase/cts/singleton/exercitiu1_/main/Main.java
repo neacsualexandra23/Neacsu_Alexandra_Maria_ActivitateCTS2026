@@ -1,8 +1,8 @@
 package ro.ase.cts.singleton.exercitiu1_.main;
 
 /* exercitiul 1 cu interfata*/
-import ro.ase.cts.singleton.exercitiu1_.model.IRegistruInternari;
-import ro.ase.cts.singleton.exercitiu1_.model.RegistruInternari;
+import ro.ase.cts.singleton.exercitiu1_.model.*;
+
 
 public class Main {
 
