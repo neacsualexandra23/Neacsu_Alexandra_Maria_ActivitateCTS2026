@@ -3,7 +3,57 @@ package ro.ase.cts.singleton.exercitiul3_.model;
 public class ServiceAuto implements IService {
 
     private static ServiceAuto instance;  // Singleton (lazy)
-    private AMasina masinaCurenta;        // doar una în service
+    private AMasina masinaCurent
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        a;        // doar una în service
 
     private ServiceAuto() {}
 
