@@ -1,6 +1,6 @@
 package ro.ase.cts.builder.exercitiu1.model;
 
-public class Pacient {
+public class Pacient implements IInternare{
     private final String nume;
     private final boolean patRabatabil;
     private final boolean micDejunInclus;
@@ -8,9 +8,6 @@ public class Pacient {
     private final boolean halatInterior;
 
     private Pacient(Builder builder) {
-        if (builder.nume == null || builder.nume.trim().isEmpty()) {
-            throw new IllegalArgumentException("Numele nu poate fi gol.");
-        }
         this.nume = builder.nume.trim();
         this.patRabatabil = builder.patRabatabil;
         this.micDejunInclus = builder.micDejunInclus;
@@ -19,14 +16,12 @@ public class Pacient {
     }
 
     @Override
-    public String toString() {
-        return "Pacient{" +
-                "nume='" + nume + '\'' +
-                ", patRabatabil=" + patRabatabil +
-                ", micDejunInclus=" + micDejunInclus +
-                ", papuciCamera=" + papuciCamera +
-                ", halatInterior=" + halatInterior +
-                '}';
+    public void print() {
+        System.out.println("Nume: "+nume);
+        System.out.println("PatRabatabil: "+patRabatabil);
+        System.out.println("micDejunInclus: "+micDejunInclus);
+        System.out.println("papuciCamera: "+papuciCamera);
+        System.out.println("halatInterior: "+halatInterior);
     }
 
     // Builder Pattern

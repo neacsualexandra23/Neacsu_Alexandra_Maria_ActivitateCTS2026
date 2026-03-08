@@ -20,7 +20,7 @@ public class Main {
                 .cuHalatInterior(true)
                 .build();
 
-        System.out.println(p1);
-        System.out.println(p2);
+       p1.print();
+       p2.print();
     }
 }

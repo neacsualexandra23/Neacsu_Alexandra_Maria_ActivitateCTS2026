@@ -15,7 +15,7 @@ public class RegistruInternari  implements IRegistruInternari{
         return instance;
     }
     @Override
-    public void afiseazaMesaj() {
+    public void print() {
         System.out.println("Registrul de internari este activ.");
     }
 }

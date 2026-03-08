@@ -11,7 +11,7 @@ public class Main {
         IRegistruInternari r1 = RegistruInternari.getInstance();
         IRegistruInternari r2 = RegistruInternari.getInstance();
 
-        r1.afiseazaMesaj();
+        r1.print();
 
         System.out.println(r1 == r2);
     }
