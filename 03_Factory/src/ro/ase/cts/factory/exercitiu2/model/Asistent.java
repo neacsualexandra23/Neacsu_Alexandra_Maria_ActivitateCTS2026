@@ -7,7 +7,7 @@ public class Asistent extends APersonal {
     }
 
     @Override
-    public void afiseazaRol() {
+    public void print() {
         System.out.println("Asistent: " + nume);
     }
 }

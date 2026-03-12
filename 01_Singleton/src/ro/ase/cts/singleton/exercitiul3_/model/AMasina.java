@@ -8,5 +8,5 @@ public abstract class AMasina {
         this.model = model;
     }
 
-    public abstract void descriere();
+    public abstract void print();
 }

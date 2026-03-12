@@ -9,27 +9,27 @@ import ro.ase.cts.singleton.exercitiul3_.model.ServiceAuto;
 public class Main {
     public static void main(String[] args) {
 
-        IService service = ServiceAuto.getInstance();
         IService service1 = ServiceAuto.getInstance();
-        System.out.println(service == service1);
+        IService service2 = ServiceAuto.getInstance();
+        System.out.println(service1 == service1);
 
         AMasina m1 = new Masina("BMW");
         AMasina m2 = new Masina("Audi");
         AMasina m3 = new Masina("Toyota");
         AMasina m4 = new Masina("Mercedes");
 
-        service.primesteMasina(m1);
+        service1.primesteMasina(m1);
 
 
-        service.primesteMasina(m2); // respinsa (ocupat)
-        service.primesteMasina(m3); // respinsa (ocupat)
-        service.primesteMasina(m4); // respinsa (ocupat)
+        service1.primesteMasina(m2); // respinsa (ocupat)
+        service1.primesteMasina(m3); // respinsa (ocupat)
+        service1.primesteMasina(m4); // respinsa (ocupat)
 
-        service.finalizeazaReparatia(); // elibereaza
+        service1.finalizeazaReparatia(); // elibereaza
 
-        service.primesteMasina(m2); // acum acceptata
+        service1.primesteMasina(m2); // acum acceptata
 
-        service.finalizeazaReparatia();
+        service1.finalizeazaReparatia();
     }
 }
 

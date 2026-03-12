@@ -6,7 +6,7 @@ import ro.ase.cts.singleton.exercitiul3_.model.IService;
 public class ServiceAuto implements IService {
 
     private static ServiceAuto instance;   // Singleton (lazy)
-    private AMasina masinaCurenta;         // în service poate fi doar una
+        // în service poate fi doar una
 
     private ServiceAuto() { }              // constructor privat
 
@@ -18,14 +18,20 @@ public class ServiceAuto implements IService {
     }
 
     @Override
+    public void print() {
+        System.out.println("service activ");
+    }
+
+    private AMasina masinaCurenta;
+    @Override
     public void primesteMasina(AMasina masina) {
         if (masinaCurenta == null) {
             masinaCurenta = masina;
             System.out.println("Masina ACCEPTATA in service: ");
-            masinaCurenta.descriere();
+
         } else {
             System.out.println("Service ocupat. Masina NU poate fi acceptata acum:");
-            masina.descriere();
+
         }
     }
 
@@ -35,7 +41,7 @@ public class ServiceAuto implements IService {
     public void finalizeazaReparatia() {
         if (masinaCurenta != null) {
             System.out.println("Reparatie FINALIZATA pentru:");
-            masinaCurenta.descriere();
+            masinaCurenta.print();
             masinaCurenta = null;
         } else {
             System.out.println("Nu exista masina in service.");

@@ -8,7 +8,7 @@ public class Masina extends AMasina {
     }
 
     @Override
-    public void descriere() {
+    public void print() {
         System.out.println("Masina: " + model);
     }
 }

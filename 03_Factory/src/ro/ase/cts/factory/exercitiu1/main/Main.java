@@ -7,15 +7,16 @@ public class Main {
 
         IFabricaSupa fabrica1 = new FabricaSupaLegume();
         ISupa supa1 = fabrica1.creeazaSupa();
-        supa1.descriere();
+        supa1.print();
 
         IFabricaSupa fabrica2 = new FabricaSupaCiuperci();
         ISupa supa2 = fabrica2.creeazaSupa();
-        supa2.descriere();
+        supa2.print();
 
         IFabricaSupa fabrica3 = new FabricaSupaVita();
         ISupa supa3 = fabrica3.creeazaSupa();
-        supa3.descriere();
+        supa3.print();
+
     }
 }
 

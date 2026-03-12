@@ -7,7 +7,7 @@ public class Brancardier extends APersonal {
     }
 
     @Override
-    public void afiseazaRol() {
+    public void print() {
         System.out.println("Brancardier: " + nume);
     }
 }

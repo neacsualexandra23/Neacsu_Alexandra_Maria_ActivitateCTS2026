@@ -7,7 +7,7 @@ public class Medic extends APersonal {
     }
 
     @Override
-    public void afiseazaRol() {
+    public void print() {
         System.out.println("Medic: " + nume);
     }
 }
