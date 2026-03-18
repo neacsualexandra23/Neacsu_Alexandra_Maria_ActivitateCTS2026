@@ -1,10 +1,8 @@
 package ro.ase.cts.singleton.exercitiul3_.main;
 
 
-import ro.ase.cts.singleton.exercitiul3_.model.AMasina;
-import ro.ase.cts.singleton.exercitiul3_.model.IService;
-import ro.ase.cts.singleton.exercitiul3_.model.Masina;
-import ro.ase.cts.singleton.exercitiul3_.model.ServiceAuto;
+import ro.ase.cts.singleton.exercitiul3_.model.*;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -18,18 +16,18 @@ public class Main {
         AMasina m3 = new Masina("Toyota");
         AMasina m4 = new Masina("Mercedes");
 
-        service1.primesteMasina(m1);
+      //  service1.primesteMasina(m1);
 
 
-        service1.primesteMasina(m2); // respinsa (ocupat)
-        service1.primesteMasina(m3); // respinsa (ocupat)
-        service1.primesteMasina(m4); // respinsa (ocupat)
+     //   service1.primesteMasina(m2); // respinsa (ocupat)
+     //   service1.primesteMasina(m3); // respinsa (ocupat)
+     //   service1.primesteMasina(m4); // respinsa (ocupat)
 
-        service1.finalizeazaReparatia(); // elibereaza
+     //   service1.finalizeazaReparatia(); // elibereaza
 
-        service1.primesteMasina(m2); // acum acceptata
+      //  service1.primesteMasina(m2); // acum acceptata
 
-        service1.finalizeazaReparatia();
+     //   service1.finalizeazaReparatia();
     }
 }
 

@@ -23,7 +23,7 @@ public class ServiceAuto implements IService {
     }
 
     private AMasina masinaCurenta;
-    @Override
+  /*  @Override
     public void primesteMasina(AMasina masina) {
         if (masinaCurenta == null) {
             masinaCurenta = masina;
@@ -47,4 +47,6 @@ public class ServiceAuto implements IService {
             System.out.println("Nu exista masina in service.");
         }
     }
+
+   */
 }
