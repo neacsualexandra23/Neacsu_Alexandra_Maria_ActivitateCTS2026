@@ -28,4 +28,9 @@ au fost realizate de aceeași echipa. Să se implementeze un nivel intermediar
 ->trebuie introdus un nivel intermediar
 
 Adapter de obiecte
+Tip Adapter	               Cum îl recunoști
+============================================
+Adapter de obiecte	       are un atribut (obiect) în interior
+Adapter de clase	       folosește moștenire (extends)
+
 */
