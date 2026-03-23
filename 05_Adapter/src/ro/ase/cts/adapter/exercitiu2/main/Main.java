@@ -28,6 +28,12 @@ au fost realizate de aceeași echipa. Să se implementeze un nivel intermediar
 ->trebuie introdus un nivel intermediar
 
 Adapter de obiecte
+pt ca adapterul conține un obiect (SoftBarNou) și apelează metodele lui
+=> compozitie
+->folosește has-a
+->flexibil
+->cel mai folosit
+
 Tip Adapter	               Cum îl recunoști
 ============================================
 Adapter de obiecte	       are un atribut (obiect) în interior
