@@ -2,4 +2,5 @@ package ro.ase.cts.factory.exercitiu1.model;
 
 public interface IFabricaSupa {
     ISupa creeazaSupa();
+
 }
