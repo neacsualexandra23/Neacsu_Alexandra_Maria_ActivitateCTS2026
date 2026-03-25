@@ -7,9 +7,9 @@ public class ComputerFacade implements IComputerFacade {
     private HardDrive hardDrive;
 
     public ComputerFacade() {
-        cpu = new CPU();
-        memory = new Memory();
-        hardDrive = new HardDrive();
+        this.cpu = new CPU();
+        this.memory = new Memory();
+        this.hardDrive = new HardDrive();
     }
 
     @Override

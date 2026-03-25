@@ -1,15 +1,19 @@
 package ro.ase.cts.facade.exercitiul2.model;
 
-public class Facade {
-    public void rezervaPachetCazareTransport(String orasPlecare, String orasDestinatie) {
+public class Facade implements IRezervarePachet {
 
-        CompanieAeriana companieAeriana=new CompanieAeriana("AirLines Paris");
-        Zbor zborDus = companieAeriana.rezervaBiletAvion(orasPlecare, orasDestinatie);
-        Zbor zborIntors = companieAeriana.rezervaBiletAvion(orasDestinatie, orasPlecare);
+    @Override
+    public void rezervaPachet(String orasPlecare, String orasDestinatie) {
+
+        CompanieAeriana companie = new CompanieAeriana("AirLines Paris");
+
+        Zbor dus = companie.rezervaBiletAvion(orasPlecare, orasDestinatie);
+        Zbor intors = companie.rezervaBiletAvion(orasDestinatie, orasPlecare);
 
         Hotel hotel = new Hotel("Hotel 2D");
-        System.out.println(zborDus.toString());
-        System.out.println(zborIntors.toString());
+
+        System.out.println(dus);
+        System.out.println(intors);
         hotel.rezervaCamera(orasDestinatie);
     }
 }
