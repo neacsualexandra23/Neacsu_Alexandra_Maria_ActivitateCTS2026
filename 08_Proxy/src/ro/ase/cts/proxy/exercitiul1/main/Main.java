@@ -9,6 +9,7 @@ public class Main {
 
         service.playVideo("Ana"); // allowed
         service.playVideo("Ion"); // denied
+        service.playVideo("Radu"); // denied
 
     }
 }

@@ -15,6 +15,7 @@ public class VideoServiceProxy implements IVideoService {
         users = new HashMap<>();
         users.put("Ana", true);
         users.put("Ion", false);
+        users.put("Radu",true);
     }
 
     @Override
