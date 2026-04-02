@@ -6,10 +6,13 @@ public class Main {
     public static void main(String[] args) {
     IComanda comandaInterna = new ComandaInterna();
     comandaInterna.afiseazaDetalii();
+    comandaInterna.proceseazaComanda();
 
     ComandaExterna comandaExterna = new ComandaExterna();
     IComanda adapter = new Adapter(comandaExterna);
     adapter.afiseazaDetalii();
+    adapter.proceseazaComanda();
+
 
 }
 }
