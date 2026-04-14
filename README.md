@@ -9,12 +9,12 @@ Creational Design Patterns
 Structural Design Patterns
 ==========================
 
-5.Adapter
-6.Facade
-7.Composite
-8.Proxy
-9.Decorator
-10.Flyweight
+5.Adapter👍
+6.Facade👍
+7.Composite👍
+8.Proxy👍
+9.Decorator👍
+10.Flyweight👍
 
 Behavioral Design Patterns ( Patternuri comportamentale ) 
 ==========================================================
