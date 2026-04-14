@@ -1,10 +1,10 @@
 Creational Design Patterns
 ===========================
 
-1.Singleton 
-2.Factory Method și Abstract Factory
-3.Prototype
-4.Builder
+1.Singleton 👍
+2.Factory Method și Abstract Factory👍
+3.Prototype👍
+4.Builder👍
 
 Structural Design Patterns
 ==========================
