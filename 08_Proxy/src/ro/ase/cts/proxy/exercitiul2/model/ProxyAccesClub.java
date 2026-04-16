@@ -9,11 +9,12 @@ public class ProxyAccesClub implements IAccesClub {
 
     @Override
     public void permiteAcces(String nume, int varsta) {
-        if (varsta >= 18) {
-            accesClub.permiteAcces(nume, varsta);
-        } else {
+        if (varsta < 18) {
             System.out.println("Acces interzis pentru " + nume +
                     ". Varsta minima este de 18 ani.");
+            return;
         }
+            accesClub.permiteAcces(nume, varsta);
+
     }
 }

@@ -11,3 +11,7 @@ public class Main {
         acces.permiteAcces("Ioana", 15);
     }
 }
+
+/*
+pot intra in club doar daca au peste 18 ani si sunt cel putin 2 pers
+ */

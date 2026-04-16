@@ -14,3 +14,18 @@ public class Main {
 
     }
 }
+/*
+Se dorește implementarea unui sistem pentru accesul la un
+serviciu de streaming video.
+
+Clasa reală: VideoService -> oferă metoda playVideo(String user)
+Există o restricție:
+doar utilizatorii abonați premium pot viziona video-ul
+Dacă utilizatorul NU este premium -> accesul este blocat
+deci Folosește Proxy Pattern pentru a controla accesul la serviciu.
+
+// Interfața comună
+interface IVideoService {
+    void playVideo(String user);
+}
+ */
