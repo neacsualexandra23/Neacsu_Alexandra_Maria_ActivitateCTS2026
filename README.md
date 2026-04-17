@@ -9,7 +9,7 @@ Creational Design Patterns
 Structural Design Patterns
 ==========================
 
-5.Adapter👍
+5.Adapter de Obiecte👍 si de clase
 6.Facade👍
 7.Composite👍
 8.Proxy👍
