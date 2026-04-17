@@ -19,8 +19,8 @@ Structural Design Patterns
 
 Behavioral Design Patterns ( Patternuri comportamentale ) 
 ==========================================================
-11.Observer,
-12.Strategy
+11.Observer👍
+12.Strategy👍
 13.Command
 14.State
 15.Template Method👍
