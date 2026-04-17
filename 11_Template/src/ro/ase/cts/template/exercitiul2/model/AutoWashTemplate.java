@@ -1,52 +1,32 @@
 package ro.ase.cts.template.exercitiul2.model;
 
 public abstract class AutoWashTemplate {
+    private final AbstractAutoWashOptions options;
+
+    public AutoWashTemplate(AbstractAutoWashOptions options) {
+        this.options = options;
+    }
 
     public final void executeWashProgram() {
-        enterTunnel();
 
-        if (getOptions().isPrewashSelected()) {
-            applyPrewash();
+
+        if (options.isPrewashSelected()) {
+            System.out.println("Se aplica faza de prespalare.");
         }
 
-        if (getOptions().isBrushWashingSelected()) {
-            applyBrushWashing();
+        if (options.isBrushWashingSelected()) {
+            System.out.println("Se aplica faza de spalare cu perii.");
         }
 
-        if (getOptions().isWaxAndPolishSelected()) {
-            applyWaxAndPolish();
+        if (options.isWaxAndPolishSelected()) {
+            System.out.println("Se aplica faza de ceruire si polish.");
         }
 
-        if (getOptions().isDryingSelected()) {
-            applyDrying();
+        if (options.isDryingSelected()) {
+            System.out.println("Se aplica faza de uscare.");
         }
 
-        finishProgram();
+
     }
 
-    protected void enterTunnel() {
-        System.out.println("Masina intra in tunelul de spalare.");
-    }
-
-    protected void applyPrewash() {
-        System.out.println("Se aplica faza de prespalare.");
-    }
-
-    protected void applyBrushWashing() {
-        System.out.println("Se aplica faza de spalare cu perii.");
-    }
-
-    protected void applyWaxAndPolish() {
-        System.out.println("Se aplica faza de ceruire si polish.");
-    }
-
-    protected void applyDrying() {
-        System.out.println("Se aplica faza de uscare.");
-    }
-
-    protected void finishProgram() {
-        System.out.println("Programul de spalare s-a incheiat.");
-    }
-
-    protected abstract AbstractAutoWashOptions getOptions();
 }

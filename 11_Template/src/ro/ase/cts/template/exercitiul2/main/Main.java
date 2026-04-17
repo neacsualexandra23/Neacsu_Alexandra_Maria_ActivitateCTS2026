@@ -7,24 +7,14 @@ public class Main {
         AbstractAutoWashOptions basicOptions =
                 new AutoWashOptions(true, true, false, true);
 
-        AbstractAutoWashOptions premiumOptions =
-                new AutoWashOptions(true, true, true, true);
-
-        AbstractAutoWashOptions fastOptions =
-                new AutoWashOptions(false, false, false, true);
 
         AutoWashTemplate basicProgram =
                 new AutoWashProgram("Program Basic", basicOptions);
 
-        AutoWashTemplate premiumProgram =
-                new AutoWashProgram("Program Premium", premiumOptions);
 
-        AutoWashTemplate fastProgram =
-                new AutoWashProgram("Program Rapid", fastOptions);
-
+        System.out.println("a inceput programul Basic ");
         basicProgram.executeWashProgram();
-        premiumProgram.executeWashProgram();
-        fastProgram.executeWashProgram();
+
     }
 }
 /*
