@@ -9,7 +9,7 @@ Creational Design Patterns
 Structural Design Patterns
 ==========================
 
-5.Adapter👍
+5.Adapter de Obiecte👍 si de clase
 6.Facade👍
 7.Composite👍
 8.Proxy👍
@@ -21,7 +21,7 @@ Behavioral Design Patterns ( Patternuri comportamentale )
 ==========================================================
 11.Observer👍
 12.Strategy👍
-13.Command
+13.Command👍
 14.State
 15.Template Method👍
 16.Chain Of Responsability
