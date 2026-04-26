@@ -25,5 +25,5 @@ Behavioral Design Patterns ( Patternuri comportamentale )
 14.State👍
 15.Template Method👍
 16.Chain Of Responsability
-17.Memento
+17.Memento👍
 
