@@ -1,6 +1,5 @@
 Creational Design Patterns
 ===========================
-
 1.Singleton 👍
 2.Factory Method și Abstract Factory👍
 3.Prototype👍
@@ -8,14 +7,12 @@ Creational Design Patterns
 
 Structural Design Patterns
 ==========================
-
 5.Adapter de Obiecte👍 si de clase
 6.Facade👍
 7.Composite👍
 8.Proxy👍
 9.Decorator👍
 10.Flyweight👍
-
 
 Behavioral Design Patterns ( Patternuri comportamentale ) 
 ==========================================================
