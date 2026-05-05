@@ -1,7 +1,6 @@
 package ro.ase.cts.flyweight.exercitiul2_.model;
 
 
-
 public class Bon {
     private int numarBon;
     private double valoare;
