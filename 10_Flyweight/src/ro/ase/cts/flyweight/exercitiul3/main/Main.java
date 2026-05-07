@@ -15,7 +15,7 @@ public class Main {
         IFlyweight client2 = factory.getClient("0711111111");
         client2.afiseazaRezervare(rezervare2);
 
-        IFlyweight client3 = factory.getClient("0722222222");
+        IFlyweight client3 = factory.getClient("0722222888");
         client3.afiseazaRezervare(new Rezervare(3, 4, "18:00"));
     }
 }
