@@ -2,10 +2,6 @@ package ro.ase.cts.flyweight.exercitiul3.main;
 
 import ro.ase.cts.flyweight.exercitiul3.model.*;
 
-
-
-import ro.ase.cts.flyweight.exercitiul3.model.*;
-
 public class Main {
     public static void main(String[] args) {
         Rezervare rezervare1 = new Rezervare(1, 2, "12:00");
