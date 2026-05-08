@@ -9,10 +9,10 @@ public class SMS implements IHandler{
     }
 
     @Override
-    public void notifica(String client, String mesaj) {
+    public void notifica(Client client, String mesaj) {
 
-        if (mesaj.equals("sms")) {
-            System.out.println(client + " oferta prin " + mesaj);
+        if (client.getTelefon()!=null) {
+            System.out.println(client.getNume() + " oferta prin sms " + mesaj);
         } else if (next != null) {
            next.notifica(client,mesaj);
         }

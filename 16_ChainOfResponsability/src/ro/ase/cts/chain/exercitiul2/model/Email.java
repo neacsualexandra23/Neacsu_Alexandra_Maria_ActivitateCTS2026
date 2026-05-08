@@ -9,9 +9,9 @@ public class Email implements IHandler{
     }
 
     @Override
-    public void notifica(String client, String mesaj) {
-        if(mesaj.equals("email")){
-        System.out.println( client+" oferta prin " + mesaj);
+    public void notifica(Client client, String mesaj) {
+        if(client.getEmail()!=null){
+        System.out.println( client.getNume()+" oferta prin email " + mesaj);
         }else if(next!=null){
             next.notifica(client,mesaj);
         }

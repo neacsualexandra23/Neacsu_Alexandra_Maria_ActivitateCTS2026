@@ -9,8 +9,8 @@ public class Manager implements IHandler{
     }
 
     @Override
-    public void notifica(String client, String mesaj) {
+    public void notifica(Client client, String mesaj) {
 
-        System.out.println(client +" oferta prin " + mesaj);
+        System.out.println(client.getNume() +" oferta prin manager " + mesaj);
     }
 }

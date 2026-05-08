@@ -10,13 +10,18 @@ public class Main {
         IHandler sms=new SMS();
         IHandler manager=new Manager();
 
-        email.setUrmatorul(sms);
-        sms.setUrmatorul(manager);
+        sms.setUrmatorul(email);
+        email.setUrmatorul(manager);
 
-        email.notifica("Ionel", "email");
-        email.notifica("Ana", "sms");
-        email.notifica("Andrea","sms");
-        email.notifica("Nicu","manager");
+
+        Client client1 = new Client("Ana", "0711111111", "ana@mail.com");
+        Client client2 = new Client("Ion", null, "ion@mail.com");
+        Client client3 = new Client("Maria", null, null);
+
+        sms.notifica(client1, "a new product was released");
+        sms.notifica(client2, "a new product was released");
+        sms.notifica(client3,"a new product was released");
+
 
     }
 }
