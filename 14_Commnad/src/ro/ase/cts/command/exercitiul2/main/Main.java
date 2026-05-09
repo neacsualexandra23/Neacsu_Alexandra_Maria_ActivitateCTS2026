@@ -5,9 +5,11 @@ public class Main {
     public static void main(String[] args) {
         AjutorFarmacist ajutor = new AjutorFarmacist();
         Farmacist farmacist = new Farmacist();
+        ComandaAducereMedicament comanda1=new ComandaAducereMedicament(ajutor, "Paracetamol")  ;
+        ComandaAducereMedicament comanda2=new ComandaAducereMedicament(ajutor, "Nurofen")  ;
 
-        farmacist.adaugaComanda(new ComandaAducereMedicament(ajutor, "Paracetamol"));
-        farmacist.adaugaComanda(new ComandaAducereMedicament(ajutor, "Nurofen"));
+        farmacist.adaugaComanda(comanda1);
+        farmacist.adaugaComanda(comanda2);
 
         farmacist.trimiteComenzi();
     }
