@@ -16,3 +16,10 @@ public class Main {
         agent.trimiteComenzi();
     }
 }
+
+/*
+Agentul de turism primește cereri pentru rezervarea de pachete turistice
+ și le trimite către operatorul agenției. Operatorul procesează
+ rezervările (ex: sejur Grecia, city break Paris). Agentul poate prelua
+  mai multe cereri fără să aștepte finalizarea lor.
+ */
