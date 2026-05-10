@@ -2,8 +2,10 @@ package ro.ase.cts.command.exercitiul4.main;
 import ro.ase.cts.command.exercitiul4.model.*;
 public class Main {
     public static void main(String[] args) {
-        Bucatar bucatar = new Bucatar();
+
         Chelner chelner = new Chelner();
+
+        Bucatar bucatar = new Bucatar();
 
         IComanda comanda1=new ComandaPreparareFel(bucatar, "Pizza");
         IComanda comanda2=new ComandaPreparareFel(bucatar, "Paste");
