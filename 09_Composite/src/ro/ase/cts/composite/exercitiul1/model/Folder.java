@@ -15,6 +15,10 @@ public class Folder implements IComponent {
         copii.add(c);
 
     }
+    public void sterge(IComponent c) {
+        copii.remove(c);
+
+    }
 
     @Override
     public void afiseaza() {

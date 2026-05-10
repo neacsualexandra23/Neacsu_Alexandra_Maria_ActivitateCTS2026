@@ -6,7 +6,8 @@ import java.util.List;
 
 public class ProxyAccesClub implements IAccesClub {
     private IAccesClub accesClub;
-    /* adaug lista*/ private List<String> persoaneInAsteptare = new ArrayList<>();
+    private List<String> persoaneInAsteptare = new ArrayList<>();
+    private List<String> persoaneInterzise = new ArrayList<>();
 
     public ProxyAccesClub(IAccesClub accesClub) {
         this.accesClub = accesClub;
@@ -14,9 +15,17 @@ public class ProxyAccesClub implements IAccesClub {
 
     @Override
     public void permiteAcces(String nume, int varsta, boolean areEchipament,boolean areInvitatie) {
+        persoaneInterzise.add("Ionel");
+        persoaneInterzise.add("Alin");
+
         if (varsta < 18) {
             System.out.println("Acces interzis pentru " + nume +
                     ". Varsta minima este de 18 ani.");
+            return;
+        }
+
+        while(persoaneInterzise.contains(nume)){
+            System.out.println(nume+ " este in lista pers interzise");
             return;
         }
 

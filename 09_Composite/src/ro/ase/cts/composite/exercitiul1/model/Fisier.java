@@ -11,4 +11,14 @@ public class Fisier implements IComponent {
     public void afiseaza() {
         System.out.println("Fisier: " + nume);
     }
+
+    @Override
+    public void adauga(IComponent element) {
+        System.out.println("adauga");
+    }
+
+    @Override
+    public void sterge(IComponent element) {
+        System.out.println("sterge");
+    }
 }
