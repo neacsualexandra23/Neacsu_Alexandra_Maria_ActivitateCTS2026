@@ -5,9 +5,13 @@ public class Main {
         Bucatar bucatar = new Bucatar();
         Chelner chelner = new Chelner();
 
-        chelner.adaugaComanda(new ComandaPreparareFel(bucatar, "Pizza"));
-        chelner.adaugaComanda(new ComandaPreparareFel(bucatar, "Paste"));
-        chelner.adaugaComanda(new ComandaPreparareFel(bucatar, "Inghetata"));
+        IComanda comanda1=new ComandaPreparareFel(bucatar, "Pizza");
+        IComanda comanda2=new ComandaPreparareFel(bucatar, "Paste");
+        IComanda comanda3=new ComandaPreparareFel(bucatar, "Inghetata");
+
+        chelner.adaugaComanda(comanda1);
+        chelner.adaugaComanda(comanda2);
+        chelner.adaugaComanda(comanda3);
 
         chelner.trimiteComenzi();
     }
