@@ -26,3 +26,11 @@ public class Proxy implements IHttpCall {
         }
     }
 }
+/*
+Una dintre funcționalitățile antivirusului este protejarea
+utilizatorului de site-urile malițioase. Un apel HTTP derivează
+interfața HttpCall. Utilizați un design pattern ce permite protejarea
+utilizatorului prin blocarea oricărui apel HTTP dacă acesta se
+realizează către un site dintr-o listă predefinită de site-uri
+malițioase.
+ */
