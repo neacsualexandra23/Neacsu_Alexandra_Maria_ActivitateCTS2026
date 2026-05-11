@@ -6,6 +6,7 @@ public class Proxy implements  IAutobuz {
    public Proxy (IAutobuz autobuz,int numarLocuri){
        this.autobuz=autobuz;
        this.numarLocuri=numarLocuri;
+       //modificare la numarLocuri
    }
 
     @Override
