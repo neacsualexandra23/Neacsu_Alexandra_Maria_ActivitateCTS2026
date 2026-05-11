@@ -1,11 +1,4 @@
-package ro.ase.cts.facade.exercitiu1.main;
-import ro.ase.cts.facade.exercitiu1.model.*;
-public class Main {
-    public static void main(String[] args) {
-        IComputerFacade computer = new ComputerFacade();
-        computer.startComputer();
-    }
-}
+
 
 /*
 Se cere implementarea pattern-ului Facade (Fațadă) pentru un sistem de
