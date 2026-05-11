@@ -8,9 +8,13 @@ public class Main {
     public static void main(String[] args) {
 
 
-        IAutobuz autobuz=new Proxy(new Autobuz(),0);
+        IAutobuz autobuz1=new Proxy(new Autobuz(),5," autobuzul 101");
 
-        autobuz.opresteInStatie();
+        autobuz1.opresteInStatie();
+
+        IAutobuz autobuz2=new Proxy(new Autobuz(),0, " autobuzul 102");
+
+        autobuz2.opresteInStatie();
     }
 }
 
