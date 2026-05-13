@@ -13,4 +13,8 @@ public class ComandaPreparareFel implements IComanda {
     public void executa() {
         bucatar.preparaFel(fel);
     }
+    @Override
+    public void undo() {
+        System.out.println("undo");
+    }
 }
