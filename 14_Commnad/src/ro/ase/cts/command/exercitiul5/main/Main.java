@@ -15,3 +15,17 @@ public class Main {
         }
 
 
+/*
+O aplicație pentru administrarea unei biblioteci permite efectuarea
+mai multor operații asupra cărților: împrumutare carte, returnare carte,
+rezervare carte și anulare rezervare.
+
+Fiecare comandă trebuie să aibă aceeași metodă de execuție, iar aplicația nu trebuie să depindă direct de clasele care realizează
+operațiile concrete asupra cărților.
+
+Pentru implementare se va folosi interfața:
+
+public interface AbstractComanda {
+    void executa();
+}
+ */
